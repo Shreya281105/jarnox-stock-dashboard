@@ -1,221 +1,202 @@
-# 📈 JarNox Stock Intelligence Platform
+📈 JarNox Stock Intelligence Platform
 
-> A mini financial data platform built as part of the JarNox Software Internship Assignment.
+A mini financial data intelligence platform built as part of the JarNox Software Internship Assignment.
+It provides stock analytics, market insights, and machine learning–based price forecasts through a REST API and an interactive dashboard.
 
----
+🌐 Live Demo
 
-## 🗂️ Project Structure
+Dashboard:
 
-```
-jarnox-dashboard/
+https://jarnox-stock-dashboard.onrender.com
+
+API Documentation:
+
+https://jarnox-stock-dashboard.onrender.com/docs
+
+🗂️ Project Structure
+jarnox-stock-dashboard/
 │
 ├── backend/
 │   └── main.py              # FastAPI application — all REST endpoints
 │
 ├── frontend/
-│   ├── dashboard.html       # Interactive web dashboard (standalone)
-│   └── data.js              # Pre-embedded stock data (for offline use)
+│   ├── dashboard.html       # Interactive web dashboard
+│   └── data.js              # Embedded dataset for dashboard rendering
 │
 ├── data/
-│   ├── *.csv                # Per-symbol OHLCV + metrics (NSE Bhavcopy format)
+│   ├── *.csv                # Per-stock OHLCV + metrics
 │   ├── stocks_meta.json     # Company metadata (name, sector)
-│   ├── predictions.json     # ML price forecasts
-│   └── model_scores.json    # Model evaluation scores
+│   ├── predictions.json     # ML model predictions
+│   └── model_scores.json    # Model evaluation results
 │
-├── data_ingestion.py        # Data pipeline (real NSE + GBM simulation)
-├── ml_predictions.py        # ML training + forecasting module
-├── Dockerfile               # Container definition
-├── docker-compose.yml       # Multi-service orchestration
+├── data_ingestion.py        # Data pipeline
+├── ml_predictions.py        # ML training + forecasting
+├── Dockerfile               # Container configuration
+├── docker-compose.yml       # Container orchestration
 └── requirements.txt
-```
 
----
+⚙️ Tech Stack
+Layer	               Technology
+Language-----	------Python 3.12
+Backend	------- ----FastAPI
+Data Processing-----	Pandas, NumPy
+Machine Learning	------scikit-learn
+Visualization-----------	Chart.js
+Frontend	---------------HTML + JavaScript
+Containerization---------	Docker
+Deployment-----------------	Render
 
-## ⚙️ Tech Stack
 
-| Layer       | Technology                              |
-|-------------|-----------------------------------------|
-| Language    | Python 3.12                             |
-| Backend     | FastAPI + Uvicorn                       |
-| Data        | Pandas, NumPy                           |
-| ML          | scikit-learn (LinearRegression, Ridge)  |
-| Frontend    | Vanilla HTML + JS + Chart.js            |
-| Container   | Docker + Docker Compose                 |
-| Data Source | NSE Bhavcopy CSVs / GBM Simulation      |
+🚀 Quick Start
+Run Locally
+# Clone repo
+git clone <repo-link>
 
----
+cd jarnox-stock-dashboard
 
-## 🚀 Quick Start
-
-### Option A — Run Locally (Python)
-
-```bash
-# 1. Clone / unzip the project
-cd jarnox-dashboard
-
-# 2. Install dependencies
+# Install dependencies
 pip install -r requirements.txt
 
-# 3. Generate data (mock GBM simulation — no external API needed)
+# Generate stock dataset
 python data_ingestion.py
 
-# 4. Train ML models + generate predictions
+# Train ML models
 python ml_predictions.py
 
-# 5. Start the API
-uvicorn backend.main:app --reload --port 8000
+# Run API
+uvicorn backend.main:app --reload
 
-# 6. Open the dashboard
-# Simply open frontend/dashboard.html in your browser
-# (data.js is pre-embedded — works fully offline)
-```
+Open:
 
-### Option B — Docker
+http://localhost:8000
 
-```bash
-# Build and run
+API docs:
+
+http://localhost:8000/docs
+🐳 Run Using Docker
 docker-compose up --build
 
-# API available at: http://localhost:8000
-# Docs at:          http://localhost:8000/docs
-```
+Access API:
 
-### Option C — Real NSE Data
+http://localhost:8000
+📡 API Endpoints
+Endpoint	Description
+/companies---	List of all companies with latest price
+/data/{symbol}	--OHLCV data and technical indicators
+/summary/{symbol}---	Key statistics for a stock
+/compare	---Compare two stocks
+/gainers----	Top gaining stocks
+/losers---	Top losing stocks
+/predict/{symbol}---	ML price forecast
+/correlation---Correlation matrix
+/sector-performance	Sector-wise performance
+/market-overview	Overall market sentiment
 
-```bash
-# Fetch last 400 trading days from NSE Bhavcopy archives
-python data_ingestion.py --real --days 400
-```
+Swagger Docs:
 
----
+/docs
+📊 Data Pipeline
 
-## 📡 API Endpoints
+The platform supports two data generation modes:
 
-| Endpoint | Method | Description |
-|---|---|---|
-| `/` | GET | Health check + endpoint map |
-| `/companies` | GET | All companies with latest prices + change |
-| `/data/{symbol}` | GET | OHLCV + MA7/MA20/MA50 + daily return + volatility |
-| `/summary/{symbol}` | GET | 52-week high/low/avg, momentum, volatility |
-| `/compare` | GET | Side-by-side comparison + Pearson correlation |
-| `/gainers` | GET | Top gaining stocks (today) |
-| `/losers` | GET | Top losing stocks (today) |
-| `/predict/{symbol}` | GET | ML price forecast for next 14 days |
-| `/correlation` | GET | Full correlation matrix (all stocks) |
-| `/sector-performance` | GET | 30-day performance grouped by sector |
-| `/market-overview` | GET | Bulls vs Bears, volume, sentiment |
+Real NSE Data
 
-**API Docs (Swagger UI):** `http://localhost:8000/docs`
-**ReDoc:** `http://localhost:8000/redoc`
+Historical stock data can be downloaded from NSE Bhavcopy archives.
 
----
+GBM Simulation
 
-## 📊 Data Pipeline
+If external data access is unavailable, stock prices are simulated using Geometric Brownian Motion (GBM):
 
-### Real Data (NSE Bhavcopy)
-NSE publishes daily OHLCV data for all equities as compressed CSV files — called **Bhavcopy** — at:
-```
-https://archives.nseindia.com/content/historical/EQUITIES/{YEAR}/{MON}/cm{DD}{MON}{YEAR}bhav.csv.zip
-```
-The ingestion script downloads, unzips, filters for EQ series, and extracts OHLCV.
-
-### Mock Data (GBM Simulation)
-When real data isn't accessible, the pipeline uses **Geometric Brownian Motion** — the same mathematical model used in Black-Scholes options pricing:
-
-```
 S(t+1) = S(t) × exp((μ - 0.5σ²)Δt + σ√Δt × Z)
-```
-Where:
-- `μ = 0.12` (12% annual drift, typical for Indian large-caps)
-- `σ` = per-stock annual volatility (calibrated from historical ranges)
-- `Z ~ N(0,1)` — standard normal shock
 
-This produces statistically realistic price paths with proper fat-tail behavior.
+This produces realistic financial time-series behavior.
 
----
+🧮 Calculated Metrics
+Metric	Description
+Moving Averages	MA7, MA20, MA50
+Daily Returns	Percentage change
+Volatility Score	Rolling volatility
+Momentum Score	Deviation from MA20
+Correlation	Pearson correlation
+🤖 Machine Learning Model
 
-## 🧮 Calculated Metrics
+Models used:
 
-| Metric | Formula |
-|---|---|
-| Daily Return | `(close - open) / open × 100` |
-| MA7 / MA20 / MA50 | Rolling mean of close prices |
-| Volatility Score | `rolling_std(20) / rolling_mean(20) × 100` |
-| Momentum Score | `(close - MA20) / MA20 × 100` |
-| Pearson Correlation | Standard Pearson r between close price series |
+Linear Regression
+Ridge Regression
 
----
+Features:
 
-## 🤖 ML Prediction Model
+Lagged closing prices
+Moving averages
+Daily returns
+Volatility
+Time index
 
-**Models trained:** Linear Regression, Ridge Regression  
-**Features used:**
-- Day index (t) — captures trend
-- Lag-1, Lag-5, Lag-20 close prices — autocorrelation
-- MA7, MA20 — trend context
-- Daily return + Volatility — momentum signals
+Evaluation:
 
-**Evaluation:** Time-series cross-validation (`TimeSeriesSplit`, 3 folds) to prevent data leakage. Best model selected by R² score.
+TimeSeriesSplit cross-validation
 
-**Scores are saved in** `data/model_scores.json`.
+Best model selected using R² score.
 
----
+🎨 Dashboard Features
 
-## 💡 Custom / Creative Features
+Interactive financial dashboard including:
 
-Beyond the required tasks, this project adds:
+• Live stock ticker
+• Interactive price charts
+• Moving average overlays
+• Time range filters
+• Stock comparison panel
+• ML price predictions
+• Top gainers & losers
+• Sector performance visualization
 
-1. **Volatility Score** — a rolling coefficient of variation that flags when a stock is unusually volatile
-2. **Momentum Score** — measures how far the current price is from its 20-day average (positive = bullish momentum)
-3. **Pearson Correlation Matrix** — `/correlation` endpoint returns full pairwise correlations; useful for portfolio diversification analysis
-4. **Sector Performance Aggregation** — `/sector-performance` groups stocks by GICS-style sectors and computes average 30-day returns
-5. **Market Sentiment** — `/market-overview` counts gainers vs losers and labels the session Bullish / Bearish / Neutral
-6. **Normalized Compare Chart** — dashboard comparison panel normalizes both stocks to base=100 for fair visual comparison
-7. **GBM Simulation fallback** — when external APIs are blocked, the pipeline generates statistically sound data using financial math
+Charts are powered by Chart.js.
 
----
+💡 Unique Features
 
-## 🎨 Dashboard Features
+This project goes beyond the basic assignment requirements:
 
-- **Live ticker strip** — animated scrolling top bar with all 12 stocks
-- **Searchable sidebar** — filter by symbol or company name
-- **OHLCV stat cards** — open, high, low, volume, 52W range
-- **3 chart modes** — Price (with MA overlays), Daily Returns (bar), Volume (bar)
-- **5 time ranges** — 2W / 1M / 3M / 6M / 1Y
-- **Stock comparison panel** — normalized return chart + Pearson correlation
-- **ML forecast panel** — 10-day ahead predictions with directional arrows
-- **Top Gainers / Losers** — clickable, switches active stock
-- **Sector performance bars** — color-coded by sector
+📊 Market Sentiment Engine
 
----
+Classifies market state as Bullish / Bearish / Neutral based on stock movements.
 
-## 🐳 Docker Notes
+📉 Correlation Analysis
 
-```bash
-# Build image
-docker build -t jarnox-api .
+Generates a full correlation matrix to identify diversification opportunities.
 
-# Run container
-docker run -p 8000:8000 jarnox-api
+📈 Momentum Indicator
 
-# With docker-compose (recommended)
-docker-compose up --build -d
+Tracks trend strength relative to moving averages.
 
-# View logs
-docker-compose logs -f
+🔁 Simulation Fallback
 
-# Stop
-docker-compose down
-```
+Automatically generates realistic stock data if real APIs fail.
 
----
+📊 Sector Aggregation
 
-## 📬 Submission
+Groups stocks by sector to analyze sector performance.
 
-- **GitHub:** *(add your repo link here)*
-- **Live Demo:** *(add Render / Railway deployment link here)*
-- **Contact:** *(your email)*
+🌍 Deployment
 
----
+The project is deployed using Docker and hosted on Render.
 
-*Built with focus on clean code, financial correctness, and a polished user experience.*
+Live demo:
+
+https://jarnox-stock-dashboard.onrender.com
+📬 Author
+
+Shreya Agrawal
+
+GitHub:
+
+https://github.com/Shreya281105
+⭐ Notes
+
+This project was built with emphasis on:
+
+• Clean architecture
+• Realistic financial modeling
+• Interactive data visualization
+• Scalable API design
