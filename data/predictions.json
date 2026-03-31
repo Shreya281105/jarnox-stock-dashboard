@@ -1,0 +1,698 @@
+{
+  "RELIANCE": [
+    {
+      "date": "2026-03-31",
+      "predicted_close": 2969.47
+    },
+    {
+      "date": "2026-04-01",
+      "predicted_close": 2992.81
+    },
+    {
+      "date": "2026-04-02",
+      "predicted_close": 2978.44
+    },
+    {
+      "date": "2026-04-03",
+      "predicted_close": 2972.01
+    },
+    {
+      "date": "2026-04-06",
+      "predicted_close": 2951.46
+    },
+    {
+      "date": "2026-04-07",
+      "predicted_close": 2988.83
+    },
+    {
+      "date": "2026-04-08",
+      "predicted_close": 2986.15
+    },
+    {
+      "date": "2026-04-09",
+      "predicted_close": 2977.72
+    },
+    {
+      "date": "2026-04-10",
+      "predicted_close": 2960.1
+    },
+    {
+      "date": "2026-04-13",
+      "predicted_close": 2964.48
+    },
+    {
+      "date": "2026-04-14",
+      "predicted_close": 2962.68
+    },
+    {
+      "date": "2026-04-15",
+      "predicted_close": 2959.97
+    },
+    {
+      "date": "2026-04-16",
+      "predicted_close": 2963.15
+    },
+    {
+      "date": "2026-04-17",
+      "predicted_close": 2969.48
+    }
+  ],
+  "TCS": [
+    {
+      "date": "2026-03-31",
+      "predicted_close": 5924.2
+    },
+    {
+      "date": "2026-04-01",
+      "predicted_close": 5934.71
+    },
+    {
+      "date": "2026-04-02",
+      "predicted_close": 5913.85
+    },
+    {
+      "date": "2026-04-03",
+      "predicted_close": 5975.18
+    },
+    {
+      "date": "2026-04-06",
+      "predicted_close": 5967.61
+    },
+    {
+      "date": "2026-04-07",
+      "predicted_close": 5977.91
+    },
+    {
+      "date": "2026-04-08",
+      "predicted_close": 5986.0
+    },
+    {
+      "date": "2026-04-09",
+      "predicted_close": 5990.99
+    },
+    {
+      "date": "2026-04-10",
+      "predicted_close": 5971.56
+    },
+    {
+      "date": "2026-04-13",
+      "predicted_close": 5999.93
+    },
+    {
+      "date": "2026-04-14",
+      "predicted_close": 5982.46
+    },
+    {
+      "date": "2026-04-15",
+      "predicted_close": 6011.84
+    },
+    {
+      "date": "2026-04-16",
+      "predicted_close": 6050.35
+    },
+    {
+      "date": "2026-04-17",
+      "predicted_close": 6024.73
+    }
+  ],
+  "INFY": [
+    {
+      "date": "2026-03-31",
+      "predicted_close": 1701.43
+    },
+    {
+      "date": "2026-04-01",
+      "predicted_close": 1702.92
+    },
+    {
+      "date": "2026-04-02",
+      "predicted_close": 1714.95
+    },
+    {
+      "date": "2026-04-03",
+      "predicted_close": 1700.06
+    },
+    {
+      "date": "2026-04-06",
+      "predicted_close": 1718.43
+    },
+    {
+      "date": "2026-04-07",
+      "predicted_close": 1711.46
+    },
+    {
+      "date": "2026-04-08",
+      "predicted_close": 1707.62
+    },
+    {
+      "date": "2026-04-09",
+      "predicted_close": 1710.04
+    },
+    {
+      "date": "2026-04-10",
+      "predicted_close": 1711.96
+    },
+    {
+      "date": "2026-04-13",
+      "predicted_close": 1725.4
+    },
+    {
+      "date": "2026-04-14",
+      "predicted_close": 1707.81
+    },
+    {
+      "date": "2026-04-15",
+      "predicted_close": 1716.0
+    },
+    {
+      "date": "2026-04-16",
+      "predicted_close": 1721.3
+    },
+    {
+      "date": "2026-04-17",
+      "predicted_close": 1708.5
+    }
+  ],
+  "HDFCBANK": [
+    {
+      "date": "2026-03-31",
+      "predicted_close": 1521.29
+    },
+    {
+      "date": "2026-04-01",
+      "predicted_close": 1527.99
+    },
+    {
+      "date": "2026-04-02",
+      "predicted_close": 1526.16
+    },
+    {
+      "date": "2026-04-03",
+      "predicted_close": 1532.08
+    },
+    {
+      "date": "2026-04-06",
+      "predicted_close": 1537.66
+    },
+    {
+      "date": "2026-04-07",
+      "predicted_close": 1539.59
+    },
+    {
+      "date": "2026-04-08",
+      "predicted_close": 1533.11
+    },
+    {
+      "date": "2026-04-09",
+      "predicted_close": 1528.66
+    },
+    {
+      "date": "2026-04-10",
+      "predicted_close": 1535.71
+    },
+    {
+      "date": "2026-04-13",
+      "predicted_close": 1542.32
+    },
+    {
+      "date": "2026-04-14",
+      "predicted_close": 1532.01
+    },
+    {
+      "date": "2026-04-15",
+      "predicted_close": 1532.96
+    },
+    {
+      "date": "2026-04-16",
+      "predicted_close": 1539.88
+    },
+    {
+      "date": "2026-04-17",
+      "predicted_close": 1542.85
+    }
+  ],
+  "ICICIBANK": [
+    {
+      "date": "2026-03-31",
+      "predicted_close": 1452.55
+    },
+    {
+      "date": "2026-04-01",
+      "predicted_close": 1437.34
+    },
+    {
+      "date": "2026-04-02",
+      "predicted_close": 1440.49
+    },
+    {
+      "date": "2026-04-03",
+      "predicted_close": 1448.16
+    },
+    {
+      "date": "2026-04-06",
+      "predicted_close": 1438.98
+    },
+    {
+      "date": "2026-04-07",
+      "predicted_close": 1454.09
+    },
+    {
+      "date": "2026-04-08",
+      "predicted_close": 1451.45
+    },
+    {
+      "date": "2026-04-09",
+      "predicted_close": 1449.29
+    },
+    {
+      "date": "2026-04-10",
+      "predicted_close": 1447.88
+    },
+    {
+      "date": "2026-04-13",
+      "predicted_close": 1445.83
+    },
+    {
+      "date": "2026-04-14",
+      "predicted_close": 1448.06
+    },
+    {
+      "date": "2026-04-15",
+      "predicted_close": 1464.53
+    },
+    {
+      "date": "2026-04-16",
+      "predicted_close": 1452.58
+    },
+    {
+      "date": "2026-04-17",
+      "predicted_close": 1452.27
+    }
+  ],
+  "WIPRO": [
+    {
+      "date": "2026-03-31",
+      "predicted_close": 644.0
+    },
+    {
+      "date": "2026-04-01",
+      "predicted_close": 646.44
+    },
+    {
+      "date": "2026-04-02",
+      "predicted_close": 647.58
+    },
+    {
+      "date": "2026-04-03",
+      "predicted_close": 642.72
+    },
+    {
+      "date": "2026-04-06",
+      "predicted_close": 643.72
+    },
+    {
+      "date": "2026-04-07",
+      "predicted_close": 642.31
+    },
+    {
+      "date": "2026-04-08",
+      "predicted_close": 640.09
+    },
+    {
+      "date": "2026-04-09",
+      "predicted_close": 640.63
+    },
+    {
+      "date": "2026-04-10",
+      "predicted_close": 639.05
+    },
+    {
+      "date": "2026-04-13",
+      "predicted_close": 647.4
+    },
+    {
+      "date": "2026-04-14",
+      "predicted_close": 647.37
+    },
+    {
+      "date": "2026-04-15",
+      "predicted_close": 648.11
+    },
+    {
+      "date": "2026-04-16",
+      "predicted_close": 644.69
+    },
+    {
+      "date": "2026-04-17",
+      "predicted_close": 645.9
+    }
+  ],
+  "BAJFINANCE": [
+    {
+      "date": "2026-03-31",
+      "predicted_close": 4821.71
+    },
+    {
+      "date": "2026-04-01",
+      "predicted_close": 4824.25
+    },
+    {
+      "date": "2026-04-02",
+      "predicted_close": 4778.96
+    },
+    {
+      "date": "2026-04-03",
+      "predicted_close": 4812.92
+    },
+    {
+      "date": "2026-04-06",
+      "predicted_close": 4774.31
+    },
+    {
+      "date": "2026-04-07",
+      "predicted_close": 4787.3
+    },
+    {
+      "date": "2026-04-08",
+      "predicted_close": 4728.42
+    },
+    {
+      "date": "2026-04-09",
+      "predicted_close": 4729.0
+    },
+    {
+      "date": "2026-04-10",
+      "predicted_close": 4697.68
+    },
+    {
+      "date": "2026-04-13",
+      "predicted_close": 4747.89
+    },
+    {
+      "date": "2026-04-14",
+      "predicted_close": 4675.23
+    },
+    {
+      "date": "2026-04-15",
+      "predicted_close": 4684.81
+    },
+    {
+      "date": "2026-04-16",
+      "predicted_close": 4696.86
+    },
+    {
+      "date": "2026-04-17",
+      "predicted_close": 4663.66
+    }
+  ],
+  "SBIN": [
+    {
+      "date": "2026-03-31",
+      "predicted_close": 560.5
+    },
+    {
+      "date": "2026-04-01",
+      "predicted_close": 556.44
+    },
+    {
+      "date": "2026-04-02",
+      "predicted_close": 558.71
+    },
+    {
+      "date": "2026-04-03",
+      "predicted_close": 550.39
+    },
+    {
+      "date": "2026-04-06",
+      "predicted_close": 551.64
+    },
+    {
+      "date": "2026-04-07",
+      "predicted_close": 552.12
+    },
+    {
+      "date": "2026-04-08",
+      "predicted_close": 549.66
+    },
+    {
+      "date": "2026-04-09",
+      "predicted_close": 544.47
+    },
+    {
+      "date": "2026-04-10",
+      "predicted_close": 546.19
+    },
+    {
+      "date": "2026-04-13",
+      "predicted_close": 540.86
+    },
+    {
+      "date": "2026-04-14",
+      "predicted_close": 534.23
+    },
+    {
+      "date": "2026-04-15",
+      "predicted_close": 537.98
+    },
+    {
+      "date": "2026-04-16",
+      "predicted_close": 528.23
+    },
+    {
+      "date": "2026-04-17",
+      "predicted_close": 534.17
+    }
+  ],
+  "TATAMOTORS": [
+    {
+      "date": "2026-03-31",
+      "predicted_close": 2046.6
+    },
+    {
+      "date": "2026-04-01",
+      "predicted_close": 2046.47
+    },
+    {
+      "date": "2026-04-02",
+      "predicted_close": 2022.27
+    },
+    {
+      "date": "2026-04-03",
+      "predicted_close": 2033.16
+    },
+    {
+      "date": "2026-04-06",
+      "predicted_close": 2048.89
+    },
+    {
+      "date": "2026-04-07",
+      "predicted_close": 2065.5
+    },
+    {
+      "date": "2026-04-08",
+      "predicted_close": 2072.06
+    },
+    {
+      "date": "2026-04-09",
+      "predicted_close": 2066.22
+    },
+    {
+      "date": "2026-04-10",
+      "predicted_close": 2061.83
+    },
+    {
+      "date": "2026-04-13",
+      "predicted_close": 2069.12
+    },
+    {
+      "date": "2026-04-14",
+      "predicted_close": 2080.35
+    },
+    {
+      "date": "2026-04-15",
+      "predicted_close": 2087.12
+    },
+    {
+      "date": "2026-04-16",
+      "predicted_close": 2085.99
+    },
+    {
+      "date": "2026-04-17",
+      "predicted_close": 2101.81
+    }
+  ],
+  "MARUTI": [
+    {
+      "date": "2026-03-31",
+      "predicted_close": 16753.11
+    },
+    {
+      "date": "2026-04-01",
+      "predicted_close": 16745.19
+    },
+    {
+      "date": "2026-04-02",
+      "predicted_close": 16752.08
+    },
+    {
+      "date": "2026-04-03",
+      "predicted_close": 16788.41
+    },
+    {
+      "date": "2026-04-06",
+      "predicted_close": 16619.7
+    },
+    {
+      "date": "2026-04-07",
+      "predicted_close": 16781.45
+    },
+    {
+      "date": "2026-04-08",
+      "predicted_close": 16859.2
+    },
+    {
+      "date": "2026-04-09",
+      "predicted_close": 16928.22
+    },
+    {
+      "date": "2026-04-10",
+      "predicted_close": 16865.28
+    },
+    {
+      "date": "2026-04-13",
+      "predicted_close": 16850.54
+    },
+    {
+      "date": "2026-04-14",
+      "predicted_close": 17029.92
+    },
+    {
+      "date": "2026-04-15",
+      "predicted_close": 16944.06
+    },
+    {
+      "date": "2026-04-16",
+      "predicted_close": 16903.24
+    },
+    {
+      "date": "2026-04-17",
+      "predicted_close": 16885.04
+    }
+  ],
+  "SUNPHARMA": [
+    {
+      "date": "2026-03-31",
+      "predicted_close": 2076.79
+    },
+    {
+      "date": "2026-04-01",
+      "predicted_close": 2080.34
+    },
+    {
+      "date": "2026-04-02",
+      "predicted_close": 2083.75
+    },
+    {
+      "date": "2026-04-03",
+      "predicted_close": 2094.19
+    },
+    {
+      "date": "2026-04-06",
+      "predicted_close": 2069.66
+    },
+    {
+      "date": "2026-04-07",
+      "predicted_close": 2079.46
+    },
+    {
+      "date": "2026-04-08",
+      "predicted_close": 2082.48
+    },
+    {
+      "date": "2026-04-09",
+      "predicted_close": 2084.49
+    },
+    {
+      "date": "2026-04-10",
+      "predicted_close": 2067.85
+    },
+    {
+      "date": "2026-04-13",
+      "predicted_close": 2062.44
+    },
+    {
+      "date": "2026-04-14",
+      "predicted_close": 2073.62
+    },
+    {
+      "date": "2026-04-15",
+      "predicted_close": 2072.93
+    },
+    {
+      "date": "2026-04-16",
+      "predicted_close": 2077.53
+    },
+    {
+      "date": "2026-04-17",
+      "predicted_close": 2074.65
+    }
+  ],
+  "LTIM": [
+    {
+      "date": "2026-03-31",
+      "predicted_close": 5598.85
+    },
+    {
+      "date": "2026-04-01",
+      "predicted_close": 5631.85
+    },
+    {
+      "date": "2026-04-02",
+      "predicted_close": 5556.08
+    },
+    {
+      "date": "2026-04-03",
+      "predicted_close": 5558.71
+    },
+    {
+      "date": "2026-04-06",
+      "predicted_close": 5604.02
+    },
+    {
+      "date": "2026-04-07",
+      "predicted_close": 5615.21
+    },
+    {
+      "date": "2026-04-08",
+      "predicted_close": 5624.39
+    },
+    {
+      "date": "2026-04-09",
+      "predicted_close": 5632.84
+    },
+    {
+      "date": "2026-04-10",
+      "predicted_close": 5550.15
+    },
+    {
+      "date": "2026-04-13",
+      "predicted_close": 5563.65
+    },
+    {
+      "date": "2026-04-14",
+      "predicted_close": 5557.83
+    },
+    {
+      "date": "2026-04-15",
+      "predicted_close": 5591.79
+    },
+    {
+      "date": "2026-04-16",
+      "predicted_close": 5587.8
+    },
+    {
+      "date": "2026-04-17",
+      "predicted_close": 5604.52
+    }
+  ]
+}

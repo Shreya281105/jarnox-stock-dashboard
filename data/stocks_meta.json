@@ -1,0 +1,50 @@
+{
+  "RELIANCE": {
+    "name": "Reliance Industries",
+    "sector": "Energy"
+  },
+  "TCS": {
+    "name": "Tata Consultancy Services",
+    "sector": "IT"
+  },
+  "INFY": {
+    "name": "Infosys",
+    "sector": "IT"
+  },
+  "HDFCBANK": {
+    "name": "HDFC Bank",
+    "sector": "Banking"
+  },
+  "ICICIBANK": {
+    "name": "ICICI Bank",
+    "sector": "Banking"
+  },
+  "WIPRO": {
+    "name": "Wipro",
+    "sector": "IT"
+  },
+  "BAJFINANCE": {
+    "name": "Bajaj Finance",
+    "sector": "Finance"
+  },
+  "SBIN": {
+    "name": "State Bank of India",
+    "sector": "Banking"
+  },
+  "TATAMOTORS": {
+    "name": "Tata Motors",
+    "sector": "Auto"
+  },
+  "MARUTI": {
+    "name": "Maruti Suzuki",
+    "sector": "Auto"
+  },
+  "SUNPHARMA": {
+    "name": "Sun Pharmaceutical",
+    "sector": "Pharma"
+  },
+  "LTIM": {
+    "name": "LTIMindtree",
+    "sector": "IT"
+  }
+}
