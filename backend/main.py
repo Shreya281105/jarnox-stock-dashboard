@@ -103,7 +103,8 @@ def compute_correlation(sym1: str, sym2: str) -> float:
 
 @app.get("/", response_class=HTMLResponse)
 def root():
-    with open("frontend/dashboard.html", "r", encoding="utf-8") as f:
+    path = os.path.join(os.path.dirname(__file__), "..", "frontend", "dashboard.html")
+    with open(path, "r", encoding="utf-8") as f:
         return f.read()
 
 
