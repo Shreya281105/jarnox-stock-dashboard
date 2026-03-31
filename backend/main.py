@@ -16,6 +16,7 @@ from datetime import datetime, timedelta
 from typing import Optional
 from functools import lru_cache
 from fastapi.staticfiles import StaticFiles
+from fastapi.responses import HTMLResponse
 # ─────────────────────────────────────────────────────────────
 # App Setup
 # ─────────────────────────────────────────────────────────────
@@ -100,13 +101,10 @@ def compute_correlation(sym1: str, sym2: str) -> float:
 # Routes
 # ─────────────────────────────────────────────────────────────
 
-@app.get("/", tags=["Info"])
+@app.get("/", response_class=HTMLResponse)
 def root():
-    return {
-        "message": "JarNox Stock Intelligence API is running 🚀",
-        "docs": "/docs",
-        "endpoints": ["/companies", "/data/{symbol}", "/summary/{symbol}", "/compare", "/gainers", "/losers", "/predict/{symbol}", "/correlation", "/sector-performance", "/market-overview"]
-    }
+    with open("frontend/dashboard.html", "r", encoding="utf-8") as f:
+        return f.read()
 
 
 @app.get("/companies", tags=["Companies"])
